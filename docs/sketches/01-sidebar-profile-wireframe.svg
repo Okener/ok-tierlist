@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Sketch 01: sidebar and profile — clean transcription</title>
+  <desc id="desc">Two schematic panels. Navigation shows a hamburger and OK Tierlist title, with Me, Feed, Templates, and Settings. Profile shows an avatar, name and counts, featured most-liked list, then Friends, Templates, Lists, and Likes rows. Arrows page through the rows. This is a layout reference, not a final design.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #222; }
+      .title { font-size: 28px; font-weight: 700; }
+      .heading { font-size: 21px; font-weight: 700; }
+      .body { font-size: 19px; }
+      .note { font-size: 16px; fill: #555; }
+      .small { font-size: 14px; fill: #555; }
+      .panel { fill: #fff; stroke: #aaa; stroke-width: 1.5; }
+      .box { fill: #f4f4f4; stroke: #777; stroke-width: 1.5; }
+      .line { fill: none; stroke: #444; stroke-width: 2; }
+    </style>
+    <g id="avatar">
+      <circle cx="50" cy="36" r="17" fill="none" stroke="#888" stroke-width="2"/>
+      <path d="M18 84 C18 52 82 52 82 84" fill="none" stroke="#888" stroke-width="2"/>
+    </g>
+    <g id="card"><rect width="168" height="90" rx="3" class="box"/><path d="M16 66 L57 33 L92 55 L117 40 L151 66" fill="none" stroke="#bbb" stroke-width="2"/></g>
+    <g id="arrow"><path d="M0 0 H26 M17 -9 L26 0 L17 9" class="line"/></g>
+  </defs>
+  <rect width="1200" height="1600" fill="#fafafa"/>
+  <text x="44" y="49" class="title">Sidebar + profile</text>
+  <text x="44" y="77" class="note">Transcribed from IMG_3498.HEIC · layout reference, not final styling</text>
+
+  <rect x="44" y="104" width="1112" height="400" rx="8" class="panel"/>
+  <text x="68" y="140" class="heading">A. Navigation notes</text>
+  <path d="M77 175 H101 M77 184 H101 M77 193 H101" class="line"/>
+  <text x="127" y="193" class="title">OK Tierlist</text>
+  <text x="510" y="191" class="body">Sidebar opens from hamburger; pushes content</text>
+  <rect x="68" y="218" width="246" height="244" class="box"/>
+  <text x="91" y="258" class="body">Me</text>
+  <text x="91" y="316" class="body">Feed</text>
+  <text x="91" y="374" class="body">Templates</text>
+  <text x="91" y="432" class="body">Settings</text>
+  <use href="#arrow" x="336" y="251"/>
+  <use href="#arrow" x="336" y="309"/>
+  <use href="#arrow" x="336" y="367"/>
+  <use href="#arrow" x="336" y="425"/>
+  <text x="386" y="258" class="body">Profile page</text>
+  <text x="386" y="316" class="body">Friends’ templates, lists, and likes</text>
+  <text x="386" y="374" class="body">Browse popular templates and create your own</text>
+  <text x="386" y="432" class="body">Privacy, dark mode, accessibility</text>
+  <text x="68" y="485" class="small">Push behavior confirmed. Standard keyboard, focus, contrast, and reduced-motion support.</text>
+
+  <rect x="44" y="532" width="1112" height="960" rx="8" class="panel"/>
+  <text x="68" y="568" class="heading">B. Profile layout</text>
+  <rect x="95" y="599" width="110" height="110" rx="3" class="box"/>
+  <use href="#avatar" x="100" y="606"/>
+  <text x="231" y="639" class="title">Profile name</text>
+  <text x="231" y="678" class="body">9 friends · 1 template · 16 lists</text>
+  <text x="231" y="703" class="small">Illustrative counts from the sketch; sample username not relied on.</text>
+
+  <rect x="95" y="737" width="991" height="102" rx="3" class="box"/>
+  <text x="123" y="779" class="heading">Featured list</text>
+  <text x="123" y="812" class="body">Most-liked by default; manual selection supported</text>
+  <text x="650" y="793" class="small">Feature your own list; reset to most-liked.</text>
+
+  <text x="95" y="883" class="heading">Friends · alphabetical</text>
+  <rect x="95" y="901" width="168" height="90" rx="3" class="box"/>
+  <rect x="296" y="901" width="168" height="90" rx="3" class="box"/>
+  <rect x="497" y="901" width="168" height="90" rx="3" class="box"/>
+  <rect x="698" y="901" width="168" height="90" rx="3" class="box"/>
+  <use href="#avatar" x="129" y="899"/>
+  <use href="#avatar" x="330" y="899"/>
+  <use href="#avatar" x="531" y="899"/>
+  <use href="#avatar" x="732" y="899"/>
+  <use href="#arrow" x="918" y="946"/>
+  <text x="967" y="952" class="small">Next N</text>
+
+  <text x="95" y="1032" class="heading">Templates · newest first</text>
+  <use href="#card" x="95" y="1050"/>
+  <use href="#card" x="296" y="1050"/>
+  <use href="#card" x="497" y="1050"/>
+  <use href="#card" x="698" y="1050"/>
+  <use href="#arrow" x="918" y="1095"/>
+  <text x="967" y="1101" class="small">Next N</text>
+
+  <text x="95" y="1181" class="heading">Lists · newest first</text>
+  <use href="#card" x="95" y="1199"/>
+  <use href="#card" x="296" y="1199"/>
+  <use href="#card" x="497" y="1199"/>
+  <use href="#card" x="698" y="1199"/>
+  <use href="#arrow" x="918" y="1244"/>
+  <text x="967" y="1250" class="small">Next N</text>
+  <text x="95" y="1330" class="heading">Likes · newest first</text>
+  <use href="#card" x="95" y="1348"/>
+  <use href="#card" x="296" y="1348"/>
+  <use href="#card" x="497" y="1348"/>
+  <use href="#card" x="698" y="1348"/>
+  <use href="#arrow" x="918" y="1393"/>
+  <text x="967" y="1399" class="small">Next N</text>
+  <text x="95" y="1470" class="small">N = visible cards. Previous off at start; Next off at end. Swipe supported. Shown: row start.</text>
+
+  <text x="44" y="1531" class="note">Owner clarifications incorporated: manual feature, paged rows, Likes below Lists, sidebar pushes content.</text>
+  <text x="44" y="1561" class="note">See 01-sidebar-profile.md for transcription confidence, spec mapping, and agent notes.</text>
+</svg>

@@ -1,0 +1,1830 @@
+{
+  "measured_at": "2026-09-30T15:59:59.294Z",
+  "node": "v26.0.0",
+  "sqlite": "3.53.0",
+  "schema_sha256": "9aa1842e02d43d6c3672e7649d224e8f445575cbd89fa867a6f40c237d853fc1",
+  "database_path": "/var/folders/jd/24p08mz51sv7grj171gzcsp40000gn/T/ok-tierlist-storage-uE9897/benchmark.sqlite",
+  "assumptions": {
+    "lists": 10000,
+    "items_per_template": 50,
+    "templates": 500,
+    "users": 1000,
+    "tiers": 5,
+    "likes_per_list": 10,
+    "sessions_per_user": 2,
+    "friendship_edges_per_user": 5,
+    "uploaded_avatars_fraction": 0.5,
+    "preview_assets_per_list": 1,
+    "image_files_in_database": false,
+    "internal_ids": "integer",
+    "public_ids": "22-character text",
+    "viewer_keys": "16-byte blob",
+    "retained_drafts": 0,
+    "edit_history": false
+  },
+  "results": [
+    {
+      "viewers_per_list": 0,
+      "viewer_records": 0,
+      "natural": {
+        "bytes": 39505920,
+        "file_bytes": 39505920,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 8556544,
+            "payload_bytes": 5975602,
+            "unused_bytes": 1055878
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7196672,
+            "payload_bytes": 5095602,
+            "unused_bytes": 579990
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7086080,
+            "payload_bytes": 4686935,
+            "unused_bytes": 878389
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1982464,
+            "payload_bytes": 1666605,
+            "unused_bytes": 203555
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1708032,
+            "payload_bytes": 1185920,
+            "unused_bytes": 217112
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1617920,
+            "payload_bytes": 1185920,
+            "unused_bytes": 127264
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1384448,
+            "payload_bytes": 1136600,
+            "unused_bytes": 168796
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1019904,
+            "payload_bytes": 946733,
+            "unused_bytes": 19328
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 798720,
+            "payload_bytes": 617600,
+            "unused_bytes": 103784
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 397312,
+            "payload_bytes": 243362,
+            "unused_bytes": 46290
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 339968,
+            "payload_bytes": 217600,
+            "unused_bytes": 46376
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 327680,
+            "payload_bytes": 269872,
+            "unused_bytes": 26852
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 319488,
+            "payload_bytes": 247184,
+            "unused_bytes": 41372
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 311296,
+            "payload_bytes": 248464,
+            "unused_bytes": 31924
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 307200,
+            "payload_bytes": 191600,
+            "unused_bytes": 39704
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 180224,
+            "payload_bytes": 142080,
+            "unused_bytes": 22620
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 163840,
+            "payload_bytes": 118464,
+            "unused_bytes": 14900
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 151552,
+            "payload_bytes": 97184,
+            "unused_bytes": 23928
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 131072,
+            "payload_bytes": 118864,
+            "unused_bytes": 8842
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 110592,
+            "payload_bytes": 93744,
+            "unused_bytes": 10528
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 110592,
+            "payload_bytes": 77720,
+            "unused_bytes": 17552
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 98304,
+            "payload_bytes": 78000,
+            "unused_bytes": 14020
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 94208,
+            "payload_bytes": 73744,
+            "unused_bytes": 14192
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 57344,
+            "payload_bytes": 38360,
+            "unused_bytes": 11320
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 53248,
+            "payload_bytes": 38765,
+            "unused_bytes": 11331
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 40960,
+            "payload_bytes": 26872,
+            "unused_bytes": 10972
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 24576,
+            "payload_bytes": 13372,
+            "unused_bytes": 9636
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          },
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 4096,
+            "payload_bytes": 0,
+            "unused_bytes": 4088
+          }
+        ]
+      },
+      "compact": {
+        "bytes": 35979264,
+        "file_bytes": 35979264,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 7516160,
+            "payload_bytes": 5975602,
+            "unused_bytes": 18542
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6635520,
+            "payload_bytes": 5095602,
+            "unused_bytes": 20482
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6221824,
+            "payload_bytes": 4686935,
+            "unused_bytes": 16665
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1794048,
+            "payload_bytes": 1666605,
+            "unused_bytes": 15691
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1228800,
+            "payload_bytes": 1136600,
+            "unused_bytes": 13604
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1019904,
+            "payload_bytes": 946733,
+            "unused_bytes": 19328
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 704512,
+            "payload_bytes": 617600,
+            "unused_bytes": 9852
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 356352,
+            "payload_bytes": 243362,
+            "unused_bytes": 5450
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 303104,
+            "payload_bytes": 269872,
+            "unused_bytes": 2348
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 299008,
+            "payload_bytes": 217600,
+            "unused_bytes": 5536
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 247184,
+            "unused_bytes": 4616
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 248464,
+            "unused_bytes": 3336
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 274432,
+            "payload_bytes": 191600,
+            "unused_bytes": 7032
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 163840,
+            "payload_bytes": 142080,
+            "unused_bytes": 6284
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 155648,
+            "payload_bytes": 118464,
+            "unused_bytes": 6732
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 135168,
+            "payload_bytes": 97184,
+            "unused_bytes": 7592
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 131072,
+            "payload_bytes": 118864,
+            "unused_bytes": 8842
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 106496,
+            "payload_bytes": 93744,
+            "unused_bytes": 6444
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 98304,
+            "payload_bytes": 77720,
+            "unused_bytes": 5300
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 90112,
+            "payload_bytes": 78000,
+            "unused_bytes": 5852
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 86016,
+            "payload_bytes": 73744,
+            "unused_bytes": 6024
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 53248,
+            "payload_bytes": 38360,
+            "unused_bytes": 7236
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 49152,
+            "payload_bytes": 38765,
+            "unused_bytes": 7247
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 36864,
+            "payload_bytes": 26872,
+            "unused_bytes": 6888
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 20480,
+            "payload_bytes": 13372,
+            "unused_bytes": 5552
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          },
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 4096,
+            "payload_bytes": 0,
+            "unused_bytes": 4088
+          }
+        ]
+      },
+      "bytes_per_list": 3950.592,
+      "projected_lists_at_7GB": 1771886,
+      "projected_lists_at_10GB": 2531266,
+      "integrity_check": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "viewers_per_list": 10,
+      "viewer_records": 100000,
+      "natural": {
+        "bytes": 42950656,
+        "file_bytes": 42950656,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 8556544,
+            "payload_bytes": 5975602,
+            "unused_bytes": 1055878
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7196672,
+            "payload_bytes": 5095602,
+            "unused_bytes": 579990
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7086080,
+            "payload_bytes": 4686935,
+            "unused_bytes": 878389
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 3334144,
+            "payload_bytes": 2598720,
+            "unused_bytes": 425660
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1982464,
+            "payload_bytes": 1666605,
+            "unused_bytes": 203555
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1708032,
+            "payload_bytes": 1185920,
+            "unused_bytes": 217112
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1617920,
+            "payload_bytes": 1185920,
+            "unused_bytes": 127264
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1384448,
+            "payload_bytes": 1136600,
+            "unused_bytes": 168796
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1105920,
+            "payload_bytes": 966733,
+            "unused_bytes": 85009
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 798720,
+            "payload_bytes": 617600,
+            "unused_bytes": 103784
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 397312,
+            "payload_bytes": 243362,
+            "unused_bytes": 46290
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 339968,
+            "payload_bytes": 217600,
+            "unused_bytes": 46376
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 327680,
+            "payload_bytes": 269872,
+            "unused_bytes": 26852
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 319488,
+            "payload_bytes": 247184,
+            "unused_bytes": 41372
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 311296,
+            "payload_bytes": 248464,
+            "unused_bytes": 31924
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 307200,
+            "payload_bytes": 191600,
+            "unused_bytes": 39704
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 180224,
+            "payload_bytes": 142080,
+            "unused_bytes": 22620
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 163840,
+            "payload_bytes": 118464,
+            "unused_bytes": 14900
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 159744,
+            "payload_bytes": 120864,
+            "unused_bytes": 35404
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 151552,
+            "payload_bytes": 97184,
+            "unused_bytes": 23928
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 110592,
+            "payload_bytes": 93744,
+            "unused_bytes": 10528
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 110592,
+            "payload_bytes": 77720,
+            "unused_bytes": 17552
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 98304,
+            "payload_bytes": 78000,
+            "unused_bytes": 14020
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 94208,
+            "payload_bytes": 73744,
+            "unused_bytes": 14192
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 57344,
+            "payload_bytes": 38360,
+            "unused_bytes": 11320
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 53248,
+            "payload_bytes": 38765,
+            "unused_bytes": 11331
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 40960,
+            "payload_bytes": 26872,
+            "unused_bytes": 10972
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 24576,
+            "payload_bytes": 13372,
+            "unused_bytes": 9636
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          }
+        ]
+      },
+      "compact": {
+        "bytes": 38928384,
+        "file_bytes": 38928384,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 7516160,
+            "payload_bytes": 5975602,
+            "unused_bytes": 18542
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6635520,
+            "payload_bytes": 5095602,
+            "unused_bytes": 20482
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6221824,
+            "payload_bytes": 4686935,
+            "unused_bytes": 16665
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 2932736,
+            "payload_bytes": 2598720,
+            "unused_bytes": 25428
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1794048,
+            "payload_bytes": 1666605,
+            "unused_bytes": 15691
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1228800,
+            "payload_bytes": 1136600,
+            "unused_bytes": 13604
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1036288,
+            "payload_bytes": 966733,
+            "unused_bytes": 15649
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 704512,
+            "payload_bytes": 617600,
+            "unused_bytes": 9852
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 356352,
+            "payload_bytes": 243362,
+            "unused_bytes": 5450
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 303104,
+            "payload_bytes": 269872,
+            "unused_bytes": 2348
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 299008,
+            "payload_bytes": 217600,
+            "unused_bytes": 5536
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 247184,
+            "unused_bytes": 4616
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 248464,
+            "unused_bytes": 3336
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 274432,
+            "payload_bytes": 191600,
+            "unused_bytes": 7032
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 163840,
+            "payload_bytes": 142080,
+            "unused_bytes": 6284
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 155648,
+            "payload_bytes": 118464,
+            "unused_bytes": 6732
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 135168,
+            "payload_bytes": 120864,
+            "unused_bytes": 10922
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 135168,
+            "payload_bytes": 97184,
+            "unused_bytes": 7592
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 106496,
+            "payload_bytes": 93744,
+            "unused_bytes": 6444
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 98304,
+            "payload_bytes": 77720,
+            "unused_bytes": 5300
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 90112,
+            "payload_bytes": 78000,
+            "unused_bytes": 5852
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 86016,
+            "payload_bytes": 73744,
+            "unused_bytes": 6024
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 53248,
+            "payload_bytes": 38360,
+            "unused_bytes": 7236
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 49152,
+            "payload_bytes": 38765,
+            "unused_bytes": 7247
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 36864,
+            "payload_bytes": 26872,
+            "unused_bytes": 6888
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 20480,
+            "payload_bytes": 13372,
+            "unused_bytes": 5552
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          }
+        ]
+      },
+      "bytes_per_list": 4295.0656,
+      "projected_lists_at_7GB": 1629777,
+      "projected_lists_at_10GB": 2328253,
+      "integrity_check": "ok",
+      "foreign_key_violations": 0
+    },
+    {
+      "viewers_per_list": 100,
+      "viewer_records": 1000000,
+      "natural": {
+        "bytes": 71663616,
+        "file_bytes": 71663616,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 32010240,
+            "payload_bytes": 25987200,
+            "unused_bytes": 2929264
+          },
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 8556544,
+            "payload_bytes": 5975602,
+            "unused_bytes": 1055878
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7196672,
+            "payload_bytes": 5095602,
+            "unused_bytes": 579990
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 7086080,
+            "payload_bytes": 4686935,
+            "unused_bytes": 878389
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1982464,
+            "payload_bytes": 1666605,
+            "unused_bytes": 203555
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1708032,
+            "payload_bytes": 1185920,
+            "unused_bytes": 217112
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1617920,
+            "payload_bytes": 1185920,
+            "unused_bytes": 127264
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1384448,
+            "payload_bytes": 1136600,
+            "unused_bytes": 168796
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1142784,
+            "payload_bytes": 976733,
+            "unused_bytes": 111729
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 798720,
+            "payload_bytes": 617600,
+            "unused_bytes": 103784
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 397312,
+            "payload_bytes": 243362,
+            "unused_bytes": 46290
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 339968,
+            "payload_bytes": 217600,
+            "unused_bytes": 46376
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 327680,
+            "payload_bytes": 269872,
+            "unused_bytes": 26852
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 319488,
+            "payload_bytes": 247184,
+            "unused_bytes": 41372
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 311296,
+            "payload_bytes": 248464,
+            "unused_bytes": 31924
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 307200,
+            "payload_bytes": 191600,
+            "unused_bytes": 39704
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 180224,
+            "payload_bytes": 142080,
+            "unused_bytes": 22620
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 163840,
+            "payload_bytes": 118464,
+            "unused_bytes": 14900
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 159744,
+            "payload_bytes": 120864,
+            "unused_bytes": 35404
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 151552,
+            "payload_bytes": 97184,
+            "unused_bytes": 23928
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 110592,
+            "payload_bytes": 93744,
+            "unused_bytes": 10528
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 110592,
+            "payload_bytes": 77720,
+            "unused_bytes": 17552
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 98304,
+            "payload_bytes": 78000,
+            "unused_bytes": 14020
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 94208,
+            "payload_bytes": 73744,
+            "unused_bytes": 14192
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 57344,
+            "payload_bytes": 38360,
+            "unused_bytes": 11320
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 53248,
+            "payload_bytes": 38765,
+            "unused_bytes": 11331
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 40960,
+            "payload_bytes": 26872,
+            "unused_bytes": 10972
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 24576,
+            "payload_bytes": 13372,
+            "unused_bytes": 9636
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          }
+        ]
+      },
+      "compact": {
+        "bytes": 65286144,
+        "file_bytes": 65286144,
+        "page_size": 4096,
+        "free_bytes": 0,
+        "objects": [
+          {
+            "name": "list_viewers",
+            "type": "table",
+            "table_name": "list_viewers",
+            "bytes": 29278208,
+            "payload_bytes": 25987200,
+            "unused_bytes": 205236
+          },
+          {
+            "name": "placements",
+            "type": "table",
+            "table_name": "placements",
+            "bytes": 7516160,
+            "payload_bytes": 5975602,
+            "unused_bytes": 18542
+          },
+          {
+            "name": "placements_consensus",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6635520,
+            "payload_bytes": 5095602,
+            "unused_bytes": 20482
+          },
+          {
+            "name": "placements_slot",
+            "type": "index",
+            "table_name": "placements",
+            "bytes": 6221824,
+            "payload_bytes": 4686935,
+            "unused_bytes": 16665
+          },
+          {
+            "name": "media_assets",
+            "type": "table",
+            "table_name": "media_assets",
+            "bytes": 4476928,
+            "payload_bytes": 4172257,
+            "unused_bytes": 90123
+          },
+          {
+            "name": "sqlite_autoindex_media_assets_1",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 1794048,
+            "payload_bytes": 1666605,
+            "unused_bytes": 15691
+          },
+          {
+            "name": "likes_user_created",
+            "type": "index",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "likes",
+            "type": "table",
+            "table_name": "likes",
+            "bytes": 1499136,
+            "payload_bytes": 1185920,
+            "unused_bytes": 8828
+          },
+          {
+            "name": "template_items",
+            "type": "table",
+            "table_name": "template_items",
+            "bytes": 1228800,
+            "payload_bytes": 1136600,
+            "unused_bytes": 13604
+          },
+          {
+            "name": "tier_lists",
+            "type": "table",
+            "table_name": "tier_lists",
+            "bytes": 1048576,
+            "payload_bytes": 976733,
+            "unused_bytes": 17889
+          },
+          {
+            "name": "consensus_items",
+            "type": "table",
+            "table_name": "consensus_items",
+            "bytes": 704512,
+            "payload_bytes": 617600,
+            "unused_bytes": 9852
+          },
+          {
+            "name": "media_assets_owner",
+            "type": "index",
+            "table_name": "media_assets",
+            "bytes": 356352,
+            "payload_bytes": 243362,
+            "unused_bytes": 5450
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_1",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 303104,
+            "payload_bytes": 269872,
+            "unused_bytes": 2348
+          },
+          {
+            "name": "template_items_asset",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 299008,
+            "payload_bytes": 217600,
+            "unused_bytes": 5536
+          },
+          {
+            "name": "tier_lists_template",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 247184,
+            "unused_bytes": 4616
+          },
+          {
+            "name": "tier_lists_owner_created",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 282624,
+            "payload_bytes": 248464,
+            "unused_bytes": 3336
+          },
+          {
+            "name": "sqlite_autoindex_template_items_2",
+            "type": "index",
+            "table_name": "template_items",
+            "bytes": 274432,
+            "payload_bytes": 191600,
+            "unused_bytes": 7032
+          },
+          {
+            "name": "users",
+            "type": "table",
+            "table_name": "users",
+            "bytes": 184320,
+            "payload_bytes": 169658,
+            "unused_bytes": 8086
+          },
+          {
+            "name": "auth_accounts",
+            "type": "table",
+            "table_name": "auth_accounts",
+            "bytes": 184320,
+            "payload_bytes": 167658,
+            "unused_bytes": 10086
+          },
+          {
+            "name": "friendships",
+            "type": "table",
+            "table_name": "friendships",
+            "bytes": 163840,
+            "payload_bytes": 142080,
+            "unused_bytes": 6284
+          },
+          {
+            "name": "tier_lists_owner_likes",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 155648,
+            "payload_bytes": 118464,
+            "unused_bytes": 6732
+          },
+          {
+            "name": "templates",
+            "type": "table",
+            "table_name": "templates",
+            "bytes": 135168,
+            "payload_bytes": 120864,
+            "unused_bytes": 10922
+          },
+          {
+            "name": "sqlite_autoindex_tier_lists_2",
+            "type": "index",
+            "table_name": "tier_lists",
+            "bytes": 135168,
+            "payload_bytes": 97184,
+            "unused_bytes": 7592
+          },
+          {
+            "name": "sessions",
+            "type": "table",
+            "table_name": "sessions",
+            "bytes": 106496,
+            "payload_bytes": 93744,
+            "unused_bytes": 6444
+          },
+          {
+            "name": "friendships_high",
+            "type": "index",
+            "table_name": "friendships",
+            "bytes": 98304,
+            "payload_bytes": 77720,
+            "unused_bytes": 5300
+          },
+          {
+            "name": "sessions_expiry",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 90112,
+            "payload_bytes": 78000,
+            "unused_bytes": 5852
+          },
+          {
+            "name": "sessions_user",
+            "type": "index",
+            "table_name": "sessions",
+            "bytes": 86016,
+            "payload_bytes": 73744,
+            "unused_bytes": 6024
+          },
+          {
+            "name": "template_tiers",
+            "type": "table",
+            "table_name": "template_tiers",
+            "bytes": 53248,
+            "payload_bytes": 38360,
+            "unused_bytes": 7236
+          },
+          {
+            "name": "sqlite_autoindex_auth_accounts_1",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 49152,
+            "payload_bytes": 38765,
+            "unused_bytes": 7247
+          },
+          {
+            "name": "sqlite_autoindex_users_1",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 36864,
+            "payload_bytes": 26872,
+            "unused_bytes": 6888
+          },
+          {
+            "name": "sqlite_autoindex_users_2",
+            "type": "index",
+            "table_name": "users",
+            "bytes": 24576,
+            "payload_bytes": 14765,
+            "unused_bytes": 6743
+          },
+          {
+            "name": "sqlite_autoindex_templates_1",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 20480,
+            "payload_bytes": 13372,
+            "unused_bytes": 5552
+          },
+          {
+            "name": "templates_owner_created",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 16384,
+            "payload_bytes": 7116,
+            "unused_bytes": 7724
+          },
+          {
+            "name": "sqlite_schema",
+            "type": "internal",
+            "table_name": "sqlite_schema",
+            "bytes": 16384,
+            "payload_bytes": 8432,
+            "unused_bytes": 7642
+          },
+          {
+            "name": "auth_accounts_user",
+            "type": "index",
+            "table_name": "auth_accounts",
+            "bytes": 16384,
+            "payload_bytes": 6744,
+            "unused_bytes": 6596
+          },
+          {
+            "name": "templates_discovery",
+            "type": "index",
+            "table_name": "templates",
+            "bytes": 12288,
+            "payload_bytes": 6196,
+            "unused_bytes": 4860
+          }
+        ]
+      },
+      "bytes_per_list": 7166.3616,
+      "projected_lists_at_7GB": 976785,
+      "projected_lists_at_10GB": 1395408,
+      "integrity_check": "ok",
+      "foreign_key_violations": 0
+    }
+  ]
+}
