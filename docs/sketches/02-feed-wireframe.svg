@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1240" viewBox="0 0 1000 1240" role="img" aria-labelledby="title desc"><title id="title">Feed — sketch transcription with owner clarifications</title><desc id="desc">Vertical activity stream, newest first. Grouped likes retain list and template author attribution. Followed by a published list card and a published template card.</desc><defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#222}.title{font-size:28px;font-weight:700}.head{font-size:21px;font-weight:700}.body{font-size:18px}.note{font-size:15px;fill:#555}.panel{fill:white;stroke:#aaa;stroke-width:1.5}.preview{fill:#f2f2f2;stroke:#999;stroke-width:1.5}</style></defs><rect width="1000" height="1240" fill="#fafafa"/>
+<text x="50" y="55" class="title">Feed</text><text x="50" y="88" class="body">Your friends’ activity · newest first · likes grouped per list per local day</text>
+<text x="50" y="118" class="note">Layout reference, not final styling. Names and titles are illustrative.</text>
+<rect x="50" y="150" width="900" height="305" rx="6" class="panel"/>
+<circle cx="86" cy="184" r="17" class="preview"/><text x="117" y="190" class="head">Friend A and Friend B like this list · Today</text>
+<rect x="75" y="218" width="850" height="145" rx="3" class="preview"/><text x="420" y="296" class="note">List preview</text>
+<text x="75" y="400" class="head">Car rankings <tspan font-weight="400">by List author</tspan></text>
+<text x="75" y="433" class="body">From Car tier list by Template author</text>
+<rect x="50" y="485" width="900" height="260" rx="6" class="panel"/>
+<rect x="75" y="508" width="850" height="135" rx="3" class="preview"/><text x="420" y="582" class="note">List preview</text>
+<text x="75" y="682" class="head">Top action movies <tspan font-weight="400">by Friend C</tspan></text>
+<text x="75" y="715" class="body">From Action movies by Template author</text>
+<rect x="50" y="775" width="900" height="260" rx="6" class="panel"/>
+<rect x="75" y="798" width="850" height="135" rx="3" class="preview"/><text x="398" y="872" class="note">Template preview</text>
+<text x="75" y="972" class="body">Friend D shared a template!</text><text x="75" y="1005" class="head">Italian Food</text>
+<text x="50" y="1130" class="note">Three examples illustrate activity types; they do not prescribe a feed limit.</text>
+<text x="50" y="1162" class="note">List author, template author, and the liking friend are separate identities.</text>
+<text x="50" y="1194" class="note">Unlike/private contributions disappear. See 02-feed.md for confirmed behavior.</text><rect x="410" y="1055" width="180" height="44" rx="5" class="panel"/><text x="452" y="1083" class="body">Load more</text></svg>
